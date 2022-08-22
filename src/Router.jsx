@@ -17,7 +17,6 @@ export default function ChangePages ({pages}){
         case "Home":
             return 
 
-            
         default:
             break;
     }
