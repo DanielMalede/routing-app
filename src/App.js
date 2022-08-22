@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Router from './Router'
 
+export const pages = ["One", "Two", "Three"]
+export const pagesNames = ["Home","Main","Footer"]
 function App() {
+  const [pageNumber, setPageNumber] = useState("One")
+  const [pagesName,setPagesName]=useState("Home")
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        pages.map(pageNum =>
+          <button onClick={() => setPageNumber(pageNum)}>{pageNum}</button>
+        )
+      }
+      {
+        pagesNames.map((nameP)=>
+        <button onClick={()=>setPagesName(nameP)}>{nameP}</button>
+        )
+      }
+      <Router pages={pageNumber} />
     </div>
   );
 }
