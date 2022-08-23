@@ -20,4 +20,5 @@ export default function ChangePages ({pages}){
         default:
             break;
     }
+    
   }
