@@ -1,24 +1,23 @@
-import { One, Two, Three } from './components/pages/index'
-
-export default function ChangePages ({pages}){
-    switch (pages) {
-      case "One":
-        return <One />
-      case "Two":
-        return <Two />
-      case "Three":
-        return <Three />
-      default:
-        break;
-    }
+import { One, Two, Three } from "./components/pages";
+import Home from "./components/pages/Home";
+import Footer from "./components/pages/Footer/Footer";
+import Main from "./components/pages/Main/Main";
+export default function ChangePages({ pages }) {
+  switch (pages) {
+    case "One":
+      return <One />;
+    case "Two":
+      return <Two />;
+    case "Three":
+      return <Three />;
+    case "Home":
+      return <Home />;
+    case "Footer":
+      return <Footer />;
+    case "Main":
+      return <Main />;
+    default:
+      break;
   }
-  export function PagesNameChange({pages}) {
-    switch (pages) {
-        case "Home":
-            return 
+}
 
-        default:
-            break;
-    }
-    
-  }

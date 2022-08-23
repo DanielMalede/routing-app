@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Router from './Router'
+import { PagesNameChange } from './Router';
 
 export const pages = ["One", "Two", "Three"]
 export const pagesNames = ["Home","Main","Footer"]
@@ -16,12 +17,15 @@ function App() {
           <button onClick={() => setPageNumber(pageNum)}>{pageNum}</button>
         )
       }
+      <br></br>
       {
         pagesNames.map((nameP)=>
         <button onClick={()=>setPagesName(nameP)}>{nameP}</button>
         )
       }
       <Router pages={pageNumber} />
+      <Router pages={pagesName} />
+      
     </div>
   );
 }
