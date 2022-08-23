@@ -8,5 +8,8 @@ import Footer from "./Footer/Footer"
 export {
     One,
     Two, 
-    Three
+    Three,
+    Home,
+    Main,
+    Footer
 }
