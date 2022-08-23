@@ -5,6 +5,5 @@ import Two from "./Two/Two"
 
 export {
     One,
-    Two,
-    Three
+    Two, Three
 }
