@@ -1,4 +1,4 @@
-import { One, Two, Three } from "./components/pages";
+import { One, Two, Three, } from "./components/pages/index";
 import Home from "./components/pages/Home";
 import Footer from "./components/pages/Footer/Footer";
 import Main from "./components/pages/Main/Main";
