@@ -1,4 +1,4 @@
-import { One, Two, Three,Home,Main,Footer } from "./components/pages/index";
+import { One, Two, Three, Home, Main, Footer } from "./components/pages/index";
 export default function ChangePages({ pages }) {
   switch (pages) {
     case "One":
