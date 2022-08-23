@@ -5,10 +5,10 @@ import Router from './Router'
 import { PagesNameChange } from './Router';
 
 export const pages = ["One", "Two", "Three"]
-export const pagesNames = ["Home","Main","Footer"]
+export const pagesNames = ["Home", "Main", "Footer"]
 function App() {
   const [pageNumber, setPageNumber] = useState("One")
-  const [pagesName,setPagesName]=useState("Home")
+  const [pagesName, setPagesName] = useState("Home")
   return (
 
     <div className="App">
@@ -19,13 +19,13 @@ function App() {
       }
       <br></br>
       {
-        pagesNames.map((nameP)=>
-        <button onClick={()=>setPagesName(nameP)}>{nameP}</button>
+        pagesNames.map((nameP) =>
+          <button onClick={() => setPagesName(nameP)}>{nameP}</button>
         )
       }
       <Router pages={pageNumber} />
       <Router pages={pagesName} />
-      
+
     </div>
   );
 }
