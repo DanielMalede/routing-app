@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import './App.css';
 import Router from './Router'
-import { PagesNameChange } from './Router';
 
 export const pages = ["One", "Two", "Three"]
 export const pagesNames = ["Home", "Main", "Footer"]
