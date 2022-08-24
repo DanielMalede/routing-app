@@ -1,13 +1,13 @@
-import { Home, Main, Footer, NotFound } from "./components/pages/index";
+import { NotFound,Home,Main } from "./components/pages/index";
 import { Routes, Route } from "react-router-dom";
 
 export default function Router() {
   return (
     <Routes>
-      <Route path="Home" element={<Home />} />
+      {/* <Route path="/" element={<Header/>} /> */}
+      <Route path="*" element={<NotFound />} />
       <Route path="Main" element={<Main />} />
-      <Route path="Footer" element={<Footer />} />
-      <Route path="NotFound" element={<NotFound />} />
+      <Route path="Home" element={<Home />} />
     </Routes>
   );
 }

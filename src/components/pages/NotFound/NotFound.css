@@ -1,3 +1,7 @@
 img {
-    width: 70vw;
+    width: 100vw;
+}   
+#H1{
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
 }
