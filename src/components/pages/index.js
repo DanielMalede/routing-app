@@ -4,12 +4,14 @@ import Two from "./Two/Two"
 import Home from "./Home"
 import Main from "./Main/Main"
 import Footer from "./Footer/Footer"
+import NotFound from "./NotFound/NotFound"
 
 export {
     One,
-    Two, 
+    Two,
     Three,
     Home,
     Main,
-    Footer
+    NotFound,
+    Footer,
 }

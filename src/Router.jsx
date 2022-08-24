@@ -1,19 +1,14 @@
-import { One, Two, Three, Home, Main, Footer } from "./components/pages/index";
-export default function ChangePages({ pages }) {
-  switch (pages) {
-    case "One":
-      return <One />;
-    case "Two":
-      return <Two />;
-    case "Three":
-      return <Three />;
-    case "Home":
-      return <Home />;
-    case "Footer":
-      return <Footer />;
-    case "Main":
-      return <Main />;
-    default:
-      break;
-  }
+import {Home, Main, Footer,NotFound } from "./components/pages/index";
+import {Routes,Route} from 'react-router-dom'
+
+export default function Router() {
+  return(
+    <Routes>
+      <Route path="Home" element={<Home/>}/>
+      <Route path="Main" element={<Main/>}/>
+      <Route path="Footer" element={<Footer/>}/>
+      <Route path="NotFound" element={<NotFound/>}/>
+    </Routes>
+
+  )
 }
