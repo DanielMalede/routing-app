@@ -2,6 +2,7 @@ import { NotFound, Home, Main } from "./components/pages/index";
 import { Routes, Route } from "react-router-dom";
 import Devices from "./components/contexts/devices";
 
+
 export default function Router() {
   return (
     <Devices>
