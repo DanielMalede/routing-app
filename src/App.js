@@ -5,8 +5,6 @@ import { BrowserRouter, Link } from 'react-router-dom';
 import Router from './Router'
 import Header from './components/features/Header/Header';
 import  Footer  from './components/features/Footer/Footer';
-
-// export const pages = ["One", "Two", "Three"]
 export const pagesNames = ["Home", "Main"]
 
 function App() {
