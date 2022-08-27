@@ -13,10 +13,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <br></br>
-        {pagesNames.map(pageNav =>
-          <Link to={pageNav}><button>{pageNav}</button></Link>)
-        }
         <Router />
         <Footer />
       </BrowserRouter>
