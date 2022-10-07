@@ -1,6 +1,5 @@
 import { createContext, useState, useEffect } from "react";
 import { devicesApi } from "../../services/devicesAPI";
-
 export const devicesContext = createContext("Ma Nishma");
 export default function Devices({ children }) {
   const [devices, setDevices] = useState([]);
