@@ -8,5 +8,4 @@ export {
     Footer,
     NotFound,
     
-    
 }
