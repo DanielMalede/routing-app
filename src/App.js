@@ -6,7 +6,6 @@ import Router from './Router'
 import Header from './components/features/Header/Header';
 import Footer from './components/features/Footer/Footer';
 export const pagesNames = ["Home", "Main"]
-
 function App() {
   return (
     <div className="App">
