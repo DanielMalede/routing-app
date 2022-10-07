@@ -9,7 +9,6 @@ export const pagesNames = ["Home", "Main"]
 
 function App() {
   return (
-
     <div className="App">
       <BrowserRouter>
         <Header />
