@@ -7,5 +7,4 @@ export {
     Main,
     Footer,
     NotFound,
-    
 }
